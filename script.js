@@ -105,5 +105,5 @@ function typeWriter(element, text, speed = 50) {
 // Start typing effect after page load
 window.addEventListener("load", () => {
   typeWriter(heroTitle, "Hi, I'm Mohammed Shahbaz", 100);
-  typeWriter(heroSubtitle, "MERN Stack Developer", 80);
+  typeWriter(heroSubtitle, "Full Stack Developer", 80);
 });
