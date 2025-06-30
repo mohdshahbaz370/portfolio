@@ -28,6 +28,7 @@ nav {
   z-index: 1000;
   padding: 1rem 0;
   transition: all 0.3s ease;
+  height: 70px;
 }
 
 nav.scrolled {
@@ -91,11 +92,12 @@ nav.scrolled {
 
 /* Hero Section */
 .hero {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   position: relative;
   overflow: hidden;
+  padding-top: 80px;
 }
 
 .hero::before {
@@ -533,6 +535,11 @@ footer {
     display: none;
   }
 
+  .hero {
+    padding-top: 100px;
+    min-height: calc(100vh - 70px);
+  }
+
   .hero h1 {
     font-size: 2.5rem;
   }
@@ -570,6 +577,24 @@ footer {
   .cta-buttons {
     flex-direction: column;
     align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding-top: 120px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
   }
 }
 
