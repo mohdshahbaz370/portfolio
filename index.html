@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mohammed Shahbaz - MERN Stack Developer</title>
+    <title>Mohammed Shahbaz - Full Stack Developer</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>"
+    />
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
   </head>
@@ -16,28 +20,34 @@
         <ul class="nav-links">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
           <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
+        <button class="mobile-menu-toggle">☰</button>
       </div>
     </nav>
 
     <section id="home" class="hero">
       <div class="container">
         <div class="hero-content">
-          <h1>Hi, I'm Mohammed Shahbaz</h1>
-          <h2>Full Stack Developer</h2>
-          <p>
-            I design and build modern web applications using
-            <span>React</span>, <span>Node.js</span>, <span>JavaScript</span>,
-            <span>MongoDB</span>, and <span>Express.js</span>. My passion is
-            creating seamless, scalable digital solutions that solve real-world
-            problems and deliver exceptional user experiences.
-          </p>
-          <div class="cta-buttons">
-            <a href="#projects" class="btn btn-primary">View My Work</a>
-            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+          <div class="hero-text">
+            <h1>Hi, I'm Mohammed Shahbaz</h1>
+            <h2>Full Stack Developer</h2>
+            <p>
+              I design and build modern web applications using
+              <span>React</span>, <span>Node.js</span>, <span>JavaScript</span>,
+              <span>MongoDB</span>, and <span>Express.js</span>. My passion is
+              creating seamless, scalable digital solutions that solve
+              real-world problems and deliver exceptional user experiences.
+            </p>
+            <div class="cta-buttons">
+              <a href="#projects" class="btn btn-primary">View My Work</a>
+              <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+          </div>
+          <div class="profile-section">
+            <div class="profile-photo">👨‍💻</div>
           </div>
         </div>
       </div>
@@ -56,11 +66,6 @@
               modern web technologies, I bring ideas to life through clean,
               efficient code.
             </p>
-            <!-- <p>
-              When I'm not coding, you'll find me exploring new technologies,
-              contributing to open-source projects, or sharing knowledge with
-              the developer community.
-            </p> -->
           </div>
           <div class="skills-grid">
             <div class="skill-item">React</div>
@@ -79,57 +84,6 @@
             <div class="skill-item">HTML</div>
             <div class="skill-item">CSS</div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects" class="projects">
-      <div class="container">
-        <h2 class="section-title fade-in">Featured Projects</h2>
-        <div class="projects-grid">
-          <div class="project-card fade-in">
-            <h3>United Construction</h3>
-            <p>
-              Built a responsive real estate website to showcase and sell land,
-              flats, and houses. Added property listings, galleries, and a
-              contact form to attract potential buyers and improve customer
-              inquiries.
-            </p>
-            <div class="project-tech">
-              <span class="tech-tag">React</span>
-              <span class="tech-tag">Node.js</span>
-              <span class="tech-tag">MongoDB</span>
-              <span class="tech-tag">Redux</span>
-              <span class="tech-tag">JavaScript</span>
-              <span class="tech-tag">Tailwind CSS</span>
-              <span class="tech-tag">Firebase</span>
-            </div>
-            <div class="project-links">
-              <a href="https://unitedconstruction.in.net/" target="_blank"
-                >Live Demo</a
-              >
-              <!-- <a href="#" target="_blank">GitHub</a> -->
-            </div>
-          </div>
-
-          <!-- <div class="project-card fade-in">
-            <h3>Task Management App</h3>
-            <p>
-              A collaborative task management application with real-time
-              updates, drag-and-drop functionality, and team collaboration
-              features.
-            </p>
-            <div class="project-tech">
-              <span class="tech-tag">React</span>
-              <span class="tech-tag">Socket.io</span>
-              <span class="tech-tag">Express</span>
-              <span class="tech-tag">MongoDB</span>
-            </div>
-            <div class="project-links">
-              <a href="#" target="_blank">Live Demo</a>
-              <a href="#" target="_blank">GitHub</a>
-            </div>
-          </div> -->
         </div>
       </div>
     </section>
@@ -178,9 +132,7 @@
             <div class="timeline-content">
               <h3>Software Developer</h3>
               <h4>Yaseen Overseas</h4>
-              <h5>
-                A travel agency and overseas consultancy
-              </h5>
+              <h5>A travel agency and overseas consultancy</h5>
               <div class="date">07/2022 - 01/2023, Hyderabad, India</div>
               <p>B2B airline travel application:</p>
               <ul>
@@ -199,41 +151,37 @@
               </ul>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
 
-          <!-- <div class="timeline-item fade-in">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <h3>Frontend Developer</h3>
-              <h4>StartUp Innovations</h4>
-              <div class="date">2020 - 2021</div>
-              <p>
-                Built responsive web applications using React and modern CSS
-                frameworks. Collaborated with designers to create pixel-perfect
-                user interfaces.
-              </p>
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="section-title fade-in">Featured Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card fade-in">
+            <h3>United Construction</h3>
+            <p>
+              Built a responsive real estate website to showcase and sell land,
+              flats, and houses. Added property listings, galleries, and a
+              contact form to attract potential buyers and improve customer
+              inquiries.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">MongoDB</span>
+              <span class="tech-tag">Redux</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Tailwind CSS</span>
+              <span class="tech-tag">Firebase</span>
             </div>
-          </div> -->
-
-          <!-- <div class="timeline-item fade-in">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <h3>Internship</h3>
-              <h4>Digiknots Pvt Ltd</h4>
-              <h5>
-                A tech company specialized in custom software and mobile app
-                development
-              </h5>
-              <div class="date">01/2021 - 06/2021, Hyderabad, India</div>
-              <ul>
-                <li>
-                  Built a B2B airline travel application enabling agents to buy
-                  and sell flight tickets among each other, streamlining ticket
-                  distribution and boosting sales collaboration.
-                </li>
-                <li>Technologies used: JavaScript, MySQL, PHP</li>
-              </ul>
+            <div class="project-links">
+              <a href="https://unitedconstruction.in.net/" target="_blank"
+                >Live Demo</a
+              >
             </div>
-          </div> -->
+          </div>
         </div>
       </div>
     </section>
@@ -250,7 +198,7 @@
             <a href="mailto:mohdshahbaz027@gmail.com" class="contact-item"
               >mohdshahbaz027@gmail.com</a
             >
-            <a href="tel:+1234567890" class="contact-item">+91 9642274838</a>
+            <a href="tel:+919642274838" class="contact-item">+91 9642274838</a>
           </div>
           <div class="social-links">
             <a
@@ -265,8 +213,6 @@
               target="_blank"
               >GitHub</a
             >
-            <!-- <a href="#" class="social-link" target="_blank">TW</a>
-            <a href="#" class="social-link" target="_blank">IN</a> -->
           </div>
         </div>
       </div>
