@@ -127,6 +127,16 @@ if (mobileMenuToggle) {
     navLinks.style.padding = "1rem";
     navLinks.style.boxShadow = "0 2px 10px rgba(0,0,0,0.1)";
   });
+
+  // Close mobile menu when clicking outside
+  document.addEventListener("click", (event) => {
+    const isClickInsideMenu = navLinks.contains(event.target);
+    const isClickOnToggle = mobileMenuToggle.contains(event.target);
+
+    if (!isClickInsideMenu && !isClickOnToggle && navLinks.style.display === "flex") {
+      navLinks.style.display = "none";
+    }
+  });
 }
 
 // Profile photo click effect
